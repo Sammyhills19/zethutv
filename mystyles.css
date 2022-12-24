@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@300&display=swap');
 
 body {
-    font-size: 16px;
+    font-size: 10px;
     font-family: 'Work Sans', sans-serif;
     margin: 0;
     padding: 0;
@@ -9,11 +9,28 @@ body {
 
 header, section, footer {
     display: block;
-    padding: 60px;
+    padding: 0 0 60px 0;
 }
 
 .head {
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    color: #d0dede;
+    background-color: #000;
+    text-transform: capitalize;
+    padding: 0;
 }
+
+h4, figcaption {
+    display: inline;
+    text-transform: uppercase; 
+    padding: 0;
+}
+
+.right_align {
+    position: relative;
+    float: right;
+    left: 65%;
+}
+
+.right_align span { padding: 0 5px;}
