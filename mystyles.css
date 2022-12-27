@@ -12,7 +12,6 @@ body {
 
 header, section, footer {
     display: block;
-    padding: 0 0 60px 0;
 }
 
 a {
@@ -40,8 +39,7 @@ h4, figcaption {
 
 .right_align {
     position: relative;
-    float: right;
-    left: 62%;
+    left: 60%;
 }
 .right_align span { padding: 0 5px;}
 
@@ -81,4 +79,15 @@ h4, figcaption {
 
 .services li:hover {
   border-bottom: 2px solid #fff;
+}
+
+footer {
+  font-size: 16px;
+  text-align: center;
+  text-transform: capitalize;
+}
+
+.inline {
+  display: inline;
+  padding: 30px;
 }
