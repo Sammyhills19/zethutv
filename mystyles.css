@@ -100,7 +100,7 @@ footer {
 
 /* Mobile View */
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 480px) {
   
   .headline {
     display: none;
@@ -111,7 +111,7 @@ footer {
   }
   
   .sub_head div {
-    padding: 10px;
+    padding: 10px 30px;
   }
   
   .sub_head h2 {
@@ -122,8 +122,10 @@ footer {
   .services {
     display: none;
     position: absolute;
-    right: 0%;
+    bottom: 90%;
+    left: 10%;
     background-color: rgba(40, 40, 40, 0.7);
+    z-index: 2;
   }
   
   .dropdwn {
@@ -132,14 +134,12 @@ footer {
     border: 1px solid #fff;
   }
   .services li {
-    text-align: justify;
-    font-size: 12px;
-    padding: 5px;
+    font-size: 16px;
   }
   
-  .services li:first-child {
+ /* .services li:first-child {
     display: none;
-  }
+  }*/
   
   /* Dropdown Effects */
 /*  .dropdwn:hover {
