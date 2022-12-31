@@ -122,15 +122,19 @@ footer {
   .services {
     display: none;
     position: absolute;
+    right: 0%;
+    background-color: rgba(40, 40, 40, 0.7);
   }
+  
   .dropdwn {
     display: block;
     padding: 5px;
     border: 1px solid #fff;
   }
   .services li {
+    text-align: justify;
     font-size: 12px;
-    padding: 5px 0;
+    padding: 5px;
   }
   
   .services li:first-child {
@@ -138,7 +142,18 @@ footer {
   }
   
   /* Dropdown Effects */
-  .dropdwn:hover {
+/*  .dropdwn:hover {
+    background-color: #50a0ef;
+  }*/
+  
+  .drop:hover .dropdwn {
+    display: none;
+  }
+  
+  .drop:hover .services  {
+    display: block;
+  }
+  .services li:hover {
     background-color: #50a0ef;
   }
 }
