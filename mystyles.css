@@ -45,7 +45,6 @@ h4, figcaption {
 .right_align span { padding: 0 5px;}
 
 /* Bottom Header Styles Category */
-
 .sub_head {
   color: #fff;
   background-color: #a50bfd;
@@ -111,7 +110,7 @@ footer {
   }
   
   .sub_head div {
-    padding: 10px 30px;
+    padding: 10px 0;
   }
   
   .sub_head h2 {
@@ -122,10 +121,13 @@ footer {
   .services {
     display: none;
     position: absolute;
-    bottom: 90%;
-    left: 10%;
+    top: 270%;
     background-color: rgba(40, 40, 40, 0.7);
-    z-index: 2;
+    padding: 0;
+  }
+  
+  .float_right {
+    clear: both;
   }
   
   .dropdwn {
@@ -134,7 +136,8 @@ footer {
     border: 1px solid #fff;
   }
   .services li {
-    font-size: 16px;
+    font-size: 12px;
+    padding: 5px 0;
   }
   
  /* .services li:first-child {
@@ -150,10 +153,21 @@ footer {
     display: none;
   }
   
+  .drop:hover {
+    position: absolute;
+    width: 100%;
+  }
   .drop:hover .services  {
     display: block;
+    width: 100%;
+  }
+  
+  .drop:hover li {
+    display: block;
+    text-align: center;
   }
   .services li:hover {
     background-color: #50a0ef;
+    border: none;
   }
 }
