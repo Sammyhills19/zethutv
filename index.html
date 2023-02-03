@@ -9,11 +9,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/c113d11c39.js" crossorigin="anonymous"></script>
+    <script src="myjs.js"></script>
     <link rel="stylesheet" href="mystyles.css" type="text/css">
   </head>
 
   <body>
-    
 <!-- Header Structure -->
     <header>
       <!-- Top Header Structure -->
@@ -39,10 +39,10 @@
           <figcaption>capturing the insight</figcaption>
         </div>
         <div class="padding drop float_right">
-          <span class="dropdwn">
+          <span id="nav" class="dropdwn">
             <i class="fa-solid fa-bars"style="font-size: 24px"></i>
           </span>
-          <ul class="services">
+          <ul id="service" class="services">
             <li><a href="index.html"><i class="fa-solid fa-house"></i> home</a></li>
             <li><a href="edutainment.html"><i class="fa-solid fa-school"></i> edutainment</a></li>
             <li><a href="#"><i class="fa-solid fa-volleyball"></i> sports</a></li>
@@ -56,19 +56,36 @@
 
     <section>
       <div class="image">
-        <img src="real_deal.jpg" width="100%" alt="The Real Deal Talkshow Cover Image">
+        <img id="show" src="shows/1.jpg" width="100%" height="200vh" alt="The Real Deal Talkshow Cover Image">
+        <script>
+var arr = ["shows/1.jpg", "shows/2.jpg", "shows/3.jpg", "shows/4.jpg"];
+var el = document.getElementById('show');
+        </script>
       </div>
       <div class="headlines">
+        <h1>Today's Date</h1>
+        <p id="time"></p>
         <h1>headlines</h1>
-        <figure>
-          <img src="#">
+        <!--figure-->
+          <img id="wax" src="headlines/1.jpg" width="100%" height="350vh">
+          <button id="next" style="display: absolute; float: right;" onclick="next()">Next</button>
           <figcaption>
-            <p>News Headlines</p>
+            <p id="dupl">News Headlines</p>
             </figcaption>
-        </figure>
+            <script>
+              var headLine = ["headlines/1.jpg", "headlines/2.jpg", "headlines/3.jpg", "headlines/4.jpg", "headlines/5.jpg"];
+              var nxt = 0;
+              function next() {
+                var foward = document.getElementById('next');
+                var nextImg = document.getElementById('wax');
+                nextImg = headLine[nxt];
+              }
+            </script>
+        <!--/figure-->
       </div>
     </section>
 
+<!--Footer Section-->
     <footer class="black">
       <div>
         <p class="inline">About</p>
