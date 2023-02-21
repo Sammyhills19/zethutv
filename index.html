@@ -38,10 +38,14 @@
           <h2><a href="index.html" alt="Zethu Television">Zethu TV</a></h2>
           <figcaption>capturing the insight</figcaption>
         </div>
-        <div class="padding drop float_right">
-          <span id="nav" class="dropdwn">
-            <i class="fa-solid fa-bars"style="font-size: 24px"></i>
+        <div id="menu" class="padding drop float_right">
+          <span id="pop" class="dropdwn">
+            <i class="fa-solid fa-bars"style="font-size: 24px" onclick="pop()"></i>
           </span>
+          <span id="vanish" class="dropdwn">
+            <i class="fa-sharp fa-bars"style="font-size: 24px" onclick="disappear()"></i>
+          </span>
+        </div>
           <ul id="service" class="services">
             <li><a href="index.html"><i class="fa-solid fa-house"></i> home</a></li>
             <li><a href="edutainment.html"><i class="fa-solid fa-school"></i> edutainment</a></li>
@@ -50,13 +54,17 @@
             <li><a href="#"><i class="fa-solid fa-newspaper"></i> news</a></li>
             <li><a href="#"><i class="fa-solid fa-user"></i> sign in</a></li>
           </ul>
-        </div>
+          <script>
+             var list = document.getElementById('service');
+            var dropdwn = document.getElementById('pop');
+            var vanish = document.getElementById('vanish');
+          </script>
       </div>
     </header>
 
     <section>
       <div class="image">
-        <img id="show" src="shows/1.jpg" width="100%" height="200vh" alt="The Real Deal Talkshow Cover Image">
+        <img id="show" src="shows/1.jpg" width="100%" alt="The Real Deal Talkshow Cover Image">
         <script>
 var arr = ["shows/1.jpg", "shows/2.jpg", "shows/3.jpg", "shows/4.jpg"];
 var el = document.getElementById('show');
@@ -66,22 +74,15 @@ var el = document.getElementById('show');
         <h1>Today's Date</h1>
         <p id="time"></p>
         <h1>headlines</h1>
-        <!--figure-->
-          <img id="wax" src="headlines/1.jpg" width="100%" height="350vh">
+          <img id="slider" src="headlines/1.jpg" width="100%" alt="News Headlines Images">
           <button id="next" style="display: absolute; float: right;" onclick="next()">Next</button>
+          <button id="next" style="display: absolute; float: left;" onclick="previous()">Prev</button>
           <figcaption>
             <p id="dupl">News Headlines</p>
             </figcaption>
             <script>
               var headLine = ["headlines/1.jpg", "headlines/2.jpg", "headlines/3.jpg", "headlines/4.jpg", "headlines/5.jpg"];
-              var nxt = 0;
-              function next() {
-                var foward = document.getElementById('next');
-                var nextImg = document.getElementById('wax');
-                nextImg = headLine[nxt];
-              }
             </script>
-        <!--/figure-->
       </div>
     </section>
 

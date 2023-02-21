@@ -145,9 +145,10 @@ footer div {
   .services {
     display: none;
     position: absolute;
-    top: 33px;
+    top: 43px;
     background-color: rgba(40, 40, 40, 0.7);
     padding: 0;
+    width: 100%;
   }
   
   .float_right {
@@ -155,36 +156,31 @@ footer div {
   }
   
   .dropdwn {
-    display: block;
+    display: inline-block;
     padding: 5px;
     border: 1px solid #fff;
     margin-top: 10px;
+    float: right;
   }
   
   .services li {
+    display: block;
+    text-align: center;
     font-size: 12px;
     padding: 5px 0;
   }
+ 
+ #show {
+   height: 30vh;
+ }
+ 
+ #slider {
+   height: 50vh;
+ }
   
-  .drop:hover .dropdwn {
+  #vanish {
     display: none;
   }
-  
- .drop:hover {
-   position: absolute;
-    width: 100%;
-  }
-  
-  .drop:hover .services  {
-    display: block;
-    width: 100%;
-  }
-  
-  .drop:hover li {
-    display: block;
-    text-align: center;
-  }
-  
   .services li:hover {
     background-color: #50a0ef;
     border: none;
